@@ -1,0 +1,111 @@
+:root{
+    --red:hsl(0, 78%, 62%);
+    --cyan:hsl(180, 62%, 55%);
+    --orange:hsl(34, 97%, 64%);
+    --blue:hsl(212, 86%, 64%);
+    --Very_Dark_Blue:hsl(234, 12%, 34%);
+    --Grayish_Blue:hsl(229, 6%, 66%);
+    --Very_Light_Gray:hsl(0, 0%, 98%);
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very_Light_Gray);
+}
+
+body{
+    font-size: 15px;
+}
+
+.titulo {
+    display: flex;
+    text-align: center;
+    margin: 4rem auto 1rem auto;
+    justify-content: center;
+    color:hsl(234, 12%, 34%);
+    font-weight: 200;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.titulo span{
+    color: var(--Very_Dark_Blue);
+    font-weight: 600;
+    margin-top: -4rem;
+}
+
+.parrafo{
+    color: var(--Grayish_Blue);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    max-width: 420px;
+    min-width: 420px;
+}
+
+.cuadrados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.cajas{
+   width: 400px; 
+   background-color: white;
+   height: 250px;
+   color: var(--Grayish_Blue);
+   font-weight: 200;
+   margin-top: 2rem;
+   -webkit-box-shadow: 8px 10px 5px 0px rgba(219,219,219,0.64);
+   -moz-box-shadow: 8px 10px 5px 0px rgba(219,219,219,0.64);
+   box-shadow: 8px 10px 5px 0px rgba(219,219,219,0.64);
+   border-radius: 0.7rem;
+   
+}
+
+.cajas span{
+    color:var(--Very_Dark_Blue);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-right: 300px;
+    
+}
+
+.cajas span p{
+    margin-top: 2rem;
+}
+
+.textito{
+    margin-left: 2rem;
+}
+
+.cajas img{
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+@media (max-width: 375px) {
+    html{
+        display:flex;
+        margin-left: 80px;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+    }
+    .parrafo{
+        max-width: 320px;
+        min-width: 320px
+    }
+    .cuadrados{
+        flex-direction: column;
+    }
+}
